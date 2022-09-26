@@ -1,0 +1,24 @@
+{
+  "name": "scripts-for-tweaking-on-chain-values",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setPrice": "node ./setOraclePrice.js",
+    "liquidate": "node ./liquidateAccount.js"
+  },
+  "dependencies": {
+    "@firefly-exchange/firefly-client": "^1.0.47",
+    "@firefly-exchange/library": "^1.0.53"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YameenMalik/scripts-for-tweaking-on-chain-values.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YameenMalik/scripts-for-tweaking-on-chain-values/issues"
+  },
+  "homepage": "https://github.com/YameenMalik/scripts-for-tweaking-on-chain-values#readme"
+}
