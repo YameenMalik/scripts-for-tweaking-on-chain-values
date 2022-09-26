@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "setPrice": "node ./setOraclePrice.js",
-    "liquidate": "node ./liquidateAccount.js"
+    "liquidate": "node ./liquidateAccount.js",
+    "removeOracleLimit": "node ./removeMaxAllowedLimit.js"
   },
   "dependencies": {
     "@firefly-exchange/firefly-client": "^1.0.47",
