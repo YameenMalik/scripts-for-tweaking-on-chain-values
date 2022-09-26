@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "setPrice": "node ./setOraclePrice.js",
+    "setFR": "node ./setFundingRate.js",
     "liquidate": "node ./liquidateAccount.js",
     "removeOracleLimit": "node ./removeMaxAllowedLimit.js"
   },
