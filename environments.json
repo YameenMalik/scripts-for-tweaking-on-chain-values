@@ -1,0 +1,60 @@
+{
+    "TESTNET":{
+        "URL": "https://bobabase.boba.network",
+        "DEPLOYER": "590f42e7ecb5f98e2cd1c8b1d832804e5ec98e560dc51c47a53d5e366f9ff0cc",
+        "ORACLE_OPERATOR": "0x406ac5dfc6d5ff3300073e0c8ef98491e6f6aacf4d6f38139c15065576afc5d9",
+        "BTC-PERP": {
+            "USDC": "0x49a5e592b05535E0C1F2F982fcF241FbAB4e7b64",
+            "PriceOracle": "0xC562151B7Be0aB0B63A8eD662909E28f3869Cab0",
+            "MarginBank": "0xfc8604B7475CEaC0013973b1AaBe85e76c2932fE",
+            "Guardian": "0x87cf84c9De6a852C47C7d4Fe6F0bDFFb0DEF0795",
+            "Evaluator": "0x6D6546E06bB8cc1d10e98B0b9a06623005Cb3492",
+            "FundingOracle": "0xE859C19B1DbBe68f539f44A1309184ACE3D1f73f",
+            "MarginMath": "0x21B844C760321813B3bf1F853381035f2dDeb901",
+            "Perpetual": "0xaE0B1a34E7fd6d2cCD5571F5F677B894bD434145",
+            "Orders": "0x8C6eDe33D167D416b32eDd568C3578B0deF9bB8D",
+            "Liquidation": "0x0f993B8206E4301bC92BB2F6fE351Bca0471153F"
+        },
+        "ETH-PERP": {
+            "USDC": "0x49a5e592b05535E0C1F2F982fcF241FbAB4e7b64",
+            "PriceOracle": "0xC562151B7Be0aB0B63A8eD662909E28f3869Cab0",
+            "MarginBank": "0xfc8604B7475CEaC0013973b1AaBe85e76c2932fE",
+            "Guardian": "0x87cf84c9De6a852C47C7d4Fe6F0bDFFb0DEF0795",
+            "Evaluator": "0x900bfD6086EcC9F3f8DaE6E8051F2848E07A9c57",
+            "FundingOracle": "0x8407538dBe5869ae091A90Ddb86a7647ceb8AfAF",
+            "MarginMath": "0x8267C61279efee9eefaDD788E18525268B47A86C",
+            "Perpetual": "0xcfD5fDC5BfCeFd26F7Ab1876913D7DA34b8cBE9f",
+            "Orders": "0xF232c48a40ECFd927787FF3bDbAD4BB7B801b683",
+            "Liquidation": "0xcBbB9c952aAe8A686B6D2D81A067d6019C83eE98"
+        }
+    },
+    "DEV":{
+        "URL": "https://l2-dev.firefly.exchange",
+        "DEPLOYER": "590f42e7ecb5f98e2cd1c8b1d832804e5ec98e560dc51c47a53d5e366f9ff0cc",
+        "ORACLE_OPERATOR": "0xd2b9b8b480d3e7bb6ac69eeac1c07e9349aa30c43e7cca167be90005a16b5718",
+       "BTC-PERP": {
+        "USDC": "0x6a653A98928129aCBf4EB7d1EC38492d9E08391f",
+        "PriceOracle": "0xc6E79658f1ecFF311a942C5A920E99EFaCd466dc",
+        "MarginBank": "0x2e9a7d8F8934b421ffC21f31a84a6f874592aD4F",
+        "Guardian": "0x77212D0bFE95543D0e30D80A67416570A7ACe0De",
+        "Evaluator": "0xCc5EF24a8010eB2C4Ac80A5da5179Bb4051f8B9d",
+        "FundingOracle": "0xb0F40CeD52B75B38eC077E2d7f806af85b68128F",
+        "MarginMath": "0x7c3AdBaFB1429fD7E5e0BB33dd4b7CBbbD671FA6",
+        "Perpetual": "0x56b3A28B48Bfeb1bE0e125A4Aac3c602647416dB",
+        "Orders": "0x3a680C89ffB652a08EEC480fB5888D29832558F4",
+        "Liquidation": "0x3A82577c658EA2667e79ED2F7daf6dA60b87eA0A"
+       },
+       "ETH-PERP": {
+         "USDC": "0x6a653A98928129aCBf4EB7d1EC38492d9E08391f",
+            "PriceOracle": "0xc6E79658f1ecFF311a942C5A920E99EFaCd466dc",
+            "MarginBank": "0x2e9a7d8F8934b421ffC21f31a84a6f874592aD4F",
+            "Guardian": "0x77212D0bFE95543D0e30D80A67416570A7ACe0De",
+            "Evaluator": "0x2ea55a18d3ABD38C39945D6B9a9e24222B9F9dcf",
+            "FundingOracle": "0x4893438123cB2F0408De5b29AB819bC2cFE002EE",
+            "MarginMath": "0x76d807435da9e917F56baE9218516BEa63c181aC",
+            "Perpetual": "0x49410b4A4bCaFDCC24fdF3Ad461c349CDb65700e",
+            "Orders": "0x82a4C372CB8FaaF75502ed4031768492Dc3CED61",
+            "Liquidation": "0xeb9e6a48E4F54321CC0aa35498ce503fa786ec31"
+       }
+    }
+}

@@ -7,11 +7,14 @@
     "setPrice": "node ./setOraclePrice.js",
     "setFR": "node ./setFundingRate.js",
     "liquidate": "node ./liquidateAccount.js",
-    "removeOracleLimit": "node ./removeMaxAllowedLimit.js"
+    "removeOracleLimit": "node ./removeMaxAllowedLimit.js",
+    "moveFR": "node ./moveFROffChain.js"
+
   },
   "dependencies": {
     "@firefly-exchange/firefly-client": "^1.0.52",
-    "@firefly-exchange/library": "^1.0.53"
+    "@firefly-exchange/library": "^1.0.53",
+    "dotenv": "^16.0.2"
   },
   "repository": {
     "type": "git",

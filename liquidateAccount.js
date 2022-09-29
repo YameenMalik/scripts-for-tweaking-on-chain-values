@@ -1,35 +1,33 @@
 const { Perpetual__factory } = require("@firefly-exchange/library/dist/src/contracts/exchange");
 const { ethers, toBigNumberStr, Trader } = require("@firefly-exchange/library");
 const { FireflyClient, Networks } = require("@firefly-exchange/firefly-client");
+const environment = require("./environments.json");
 
-//TODO can be fetched from dapi
-const contracts = {
-    "BTC": {
-        "perpetual": "0xaE0B1a34E7fd6d2cCD5571F5F677B894bD434145",
-        "liquidation": "0x0f993B8206E4301bC92BB2F6fE351Bca0471153F"
-    },
-    "ETH": {
-        "perpetual": "0xcfD5fDC5BfCeFd26F7Ab1876913D7DA34b8cBE9f",
-        "liquidation": "0xcBbB9c952aAe8A686B6D2D81A067d6019C83eE98"
-    }
-}
+require('dotenv').config();
+env = environment[process.env.env]
+market = process.env.market;
+
+console.log("Env:", process.env.env);
+console.log("Market:", market);
 
 
-const providerURL = "https://bobabase.boba.network";
+const providerURL = env["URL"];
+const liquidationContractAddress = env[market]["Liquidation"]
+const perpetualContractAddress = env[market]["Perpetual"]
+
 const provider = new ethers.providers.JsonRpcProvider(providerURL);
 
-async function main(market, liquidatePvtKey, liquidatorPvtKey, leverage, quantity){
-    const pairName = market + "-PERP";
+const network = env == "TESTNET" ? Networks.TESTNET : Networks.DEV
 
+async function main(liquidatePvtKey, liquidatorPvtKey, leverage, quantity){
 
-    const client = new FireflyClient(true, Networks.TESTNET, liquidatePvtKey);
+    const client = new FireflyClient(true, network, liquidatePvtKey);
     client.init()
 
     const liquidatorWallet = new ethers.Wallet(liquidatorPvtKey, provider);
-    const contract = Perpetual__factory.connect(contracts[market].perpetual, liquidatorWallet);
+    const contract = Perpetual__factory.connect(perpetualContractAddress, liquidatorWallet);
 
     const position = await client.getUserPosition({symbol:pairName});
-
     
     if(!position.ok){
         console.error(`Could not find user ${client.getPublicAddress()} position info on DAPI`);
@@ -49,7 +47,7 @@ async function main(market, liquidatePvtKey, liquidatorPvtKey, leverage, quantit
         },
         liquidatorWallet.address,
         await client.getPublicAddress(),
-        contracts[market].liquidation
+        liquidationContractAddress
     );
 
     await  ( await contract
@@ -63,18 +61,12 @@ async function main(market, liquidatePvtKey, liquidatorPvtKey, leverage, quantit
 
 
 if(require.main === module){
-    if(process.argv.length != 7){
-      console.error(`Provide market, account address to be liquidated, liquidator's private key, leverage and quantity
-      \ne.g. "yarn liquidate <MARKET> <liquidate pvt key> <liquidator pvt key> <leverage> <quantity>"
-      \ne.g  "yarn liquidate BTC key1 key2 4 10
+    if(process.argv.length != 6){
+      console.error(`Provide account address to be liquidated, liquidator's private key, leverage and quantity
+      \ne.g. "yarn liquidate <liquidate pvt key> <liquidator pvt key> <leverage> <quantity>"
+      \ne.g  "yarn liquidate key1 key2 4 10
       `);
       process.exit(1);  
     };
-
-    if(process.argv[2] != "BTC" && process.argv[2] != "ETH"){
-        console.error("Only BTC/ETH markets are supported")
-        process.exit(1)
-      }
-
-    main(process.argv[2], process.argv[3], process.argv[4], process.argv[5], process.argv[6]);
+    main(process.argv[2], process.argv[3], process.argv[4], process.argv[5]);
 }
