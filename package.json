@@ -9,7 +9,6 @@
     "liquidate": "node ./liquidateAccount.js",
     "removeOracleLimit": "node ./removeMaxAllowedLimit.js",
     "moveFR": "node ./moveFROffChain.js"
-
   },
   "dependencies": {
     "@firefly-exchange/firefly-client": "^1.0.52",
