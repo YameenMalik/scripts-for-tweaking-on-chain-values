@@ -2,7 +2,11 @@
 
 Install packages using `yarn`
 
-For all the scripts, first set the `env` (TESTNET or DEV) and `market` (BTC-PERP/ETH-PERP) in `.env` file and then run scripts. All scripts target the market provided in .env file on the environment specified.
+- Create a `.env` file by replicating `.env.example`
+
+- For all the scripts, first set the `env` (TESTNET or DEV) and `market` (BTC-PERP/ETH-PERP) in `.env` file and then run scripts. 
+
+- All scripts target the market provided in .env file on the environment specified.
 
 - Oracle Price: Run `yarn setPrice <price>`
 

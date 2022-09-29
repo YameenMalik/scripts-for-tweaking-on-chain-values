@@ -1,5 +1,5 @@
-const { Perpetual__factory, Guardian__factory, PriceOracle__factory, FundingOracle__factory } = require("@firefly-exchange/library/dist/src/contracts/exchange");
-const { ethers, toBigNumberStr, toBigNumber, bigNumber, bnStrToBaseNumber } = require("@firefly-exchange/library");
+const { Guardian__factory } = require("@firefly-exchange/library/dist/src/contracts/exchange");
+const { ethers } = require("@firefly-exchange/library");
 
 const environment = require("./environments.json");
 require('dotenv').config();

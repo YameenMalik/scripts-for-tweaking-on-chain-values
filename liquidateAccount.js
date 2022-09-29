@@ -1,4 +1,4 @@
-const { Perpetual__factory } = require("@firefly-exchange/library/dist/src/contracts/exchange");
+const { Perpetual__factory } = require("@firefly-exchange/library");
 const { ethers, toBigNumberStr, Trader } = require("@firefly-exchange/library");
 const { FireflyClient, Networks } = require("@firefly-exchange/firefly-client");
 const environment = require("./environments.json");
