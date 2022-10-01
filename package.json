@@ -8,7 +8,9 @@
     "setFR": "node ./setFundingRate.js",
     "liquidate": "node ./liquidateAccount.js",
     "removeOracleLimit": "node ./removeMaxAllowedLimit.js",
-    "moveFR": "node ./moveFROffChain.js"
+    "moveFR": "node ./moveFROffChain.js",
+    "setFee": "node ./setFees.js",
+    "incPD": "node ./increaseOraclePriceDiff.js"
   },
   "dependencies": {
     "@firefly-exchange/firefly-client": "^1.0.52",

@@ -20,14 +20,11 @@ async function main(price){
     const contract = PriceOracle__factory.connect(priceOracleAddress, operatorWallet);
 
     const data = await contract.getPrice(market);
-
-    console.log("Market:", market)
     
     console.log(`Current price: (${BigNumber(data[0].toHexString()).shiftedBy(-18).toFixed(6)},${BigNumber(data[0].toHexString()).toFixed(0)}) set at timestamp: ${+data[1]}`);
 
     console.log(`Setting Price: ${price}, - ${toBigNumberStr(price)}`);
-
-
+    
     let i = 1;
     while(true){
       console.log("Try #", i++)
