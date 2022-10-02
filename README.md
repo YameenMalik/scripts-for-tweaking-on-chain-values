@@ -4,7 +4,7 @@ Install packages using `yarn`
 
 - Create a `.env` file by replicating `.env.example`
 
-- For all the scripts, first set the `env` (TESTNET or DEV) and `market` (BTC-PERP/ETH-PERP) in `.env` file and then run scripts. 
+- For all the scripts, first set the `env` (TESTNET or DEV) and `market` (BTC-PERP/ETH-PERP (tBTC for DEV environment)) in `.env` file and then run scripts. 
 
 - All scripts target the market provided in .env file on the environment specified.
 
