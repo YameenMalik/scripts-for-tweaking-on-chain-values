@@ -4,10 +4,7 @@ const environment = require("./environments.json");
 require('dotenv').config();
 env = environment[process.env.env]
 market = process.env.market;
-
 console.log("Env:", process.env.env);
-console.log("Market:", market);
-
 
 const providerURL = env["URL"];
 const adminKey = env["DEPLOYER"]
