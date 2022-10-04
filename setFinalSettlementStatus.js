@@ -26,7 +26,7 @@ async function main(priceLowerBound,priceUpperBound){
 
 if(require.main === module){
     if(process.argv.length != 4){
-      console.error(`provide oraclePriceUpperBound and oraclePriceLowerBound e.g. yarn setFinalSettlementStatus <oraclePriceUpperBound> <oraclePriceUpperBound>`);
+      console.error(`provide oraclePriceLowerBound and oraclePriceUpperBound e.g. yarn setFinalSettlementStatus <oraclePricelowerBound> <oraclePriceUpperBound>`);
       process.exit(1);  
     };   
     main(process.argv[2],process.argv[3]);

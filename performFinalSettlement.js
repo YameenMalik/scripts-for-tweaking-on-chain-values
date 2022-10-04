@@ -34,7 +34,7 @@ async function main(priceLowerBound,priceUpperBound,ownerPvtKey){
 
 if(require.main === module){
     if(process.argv.length != 5){
-      console.error(`provide oraclePriceUpperBound,oraclePriceLowerBound and ownerPvtKey e.g. yarn performFinalSettlementStatus <ownerPvtKey> `);
+      console.error(`provide oraclePriceLowerBound,oraclePriceUpperBound and ownerPvtKey e.g. yarn performFinalSettlementStatus <oraclePricelowerBound> <oraclePriceUpperBound> <ownerPvtKey>`);
       process.exit(1);  
     };   
     main(process.argv[2],process.argv[3],process.argv[4]);
