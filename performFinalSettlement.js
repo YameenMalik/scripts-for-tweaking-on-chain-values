@@ -28,7 +28,6 @@ async function main(priceLowerBound,priceUpperBound,ownerPvtKey){
     const ownerWallet = new ethers.Wallet(owner, provider);
     contract = Perpetual__factory.connect(perpetualContractAddress, ownerWallet); 
     const address = await ownerWallet.getAddress();
-    console.log ("balance", +await provider.getBalance(await ownerWallet.getAddress()));
     await ( await contract.withdrawFinalSettlement(ownerWallet.address )).wait();
 }
 
