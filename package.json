@@ -10,6 +10,10 @@
     "removeOracleLimit": "node ./removeMaxAllowedLimit.js",
     "moveFR": "node ./moveFR.js",
     "setFee": "node ./setFees.js",
+    "setTrading": "node ./setTrading.js",
+    "setMarginBankWithdrawal": "node ./setMarginBankWithdrawal.js",
+    "setFinalSettlementStatus": "node ./setFinalSettlementStatus.js",
+    "performFinalSettlement": "node ./performFinalSettlement.js",
     "incPD": "node ./increaseOraclePriceDiff.js"
   },
   "dependencies": {
