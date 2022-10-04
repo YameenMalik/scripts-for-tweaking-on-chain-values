@@ -18,7 +18,7 @@ const provider = new ethers.providers.JsonRpcProvider(providerURL);
 const ownerWallet = new ethers.Wallet(owner, provider);
 
 async function main(priceLowerBound,priceUpperBound){
-    console.log("Set Final Settlement Enable Status:")
+    console.log("Enabling Final Settlement")
     const contract = Perpetual__factory.connect(perpetualContractAddress, ownerWallet);
     await ( await contract.enableFinalSettlement(toBigNumberStr(priceLowerBound),toBigNumberStr(priceUpperBound))).wait();
 }
@@ -26,7 +26,7 @@ async function main(priceLowerBound,priceUpperBound){
 
 if(require.main === module){
     if(process.argv.length != 4){
-      console.error(`provide oraclePriceLowerBound and oraclePriceUpperBound e.g. yarn setFinalSettlementStatus <oraclePricelowerBound> <oraclePriceUpperBound>`);
+      console.error(`provide oraclePriceLowerBound and oraclePriceUpperBound e.g. yarn enableFS <oraclePricelowerBound> <oraclePriceUpperBound>`);
       process.exit(1);  
     };   
     main(process.argv[2],process.argv[3]);

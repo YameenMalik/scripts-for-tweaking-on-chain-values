@@ -19,7 +19,7 @@ const provider = new ethers.providers.JsonRpcProvider(providerURL);
 const guardianWallet = new ethers.Wallet(guardian, provider);
 
 async function main(moveTo){
-    const destination = moveTo == 1 ? "off-chain" : "on-chain"
+    const destination = moveTo == 1 ? "off" : "on"
     console.log("Setting Trading Status:", destination)
     const contract = Guardian__factory.connect(guardianContractAddress, guardianWallet);
     await ( await contract.setTradingStatus(perpetualContractAddress, moveTo)).wait()
