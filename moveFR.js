@@ -18,10 +18,18 @@ const guardianContractAddress = env[market]["Guardian"]
 const provider = new ethers.providers.JsonRpcProvider(providerURL);
 const guardianWallet = new ethers.Wallet(guardian, provider);
 
-async function main(){
-    console.log("Moving funding rate off-chain")
+async function main(moveTo){
+    const destination = moveTo == 1 ? "off-chain" : "on-chain"
+    console.log("Moving funding rate:", destination)
     const contract = Guardian__factory.connect(guardianContractAddress, guardianWallet);
-    await ( await contract.setFundingRateStatus(fundingOracleContractAddress, 1)).wait()
+    await ( await contract.setFundingRateStatus(fundingOracleContractAddress, moveTo)).wait()
 }
 
-main();
+
+if(require.main === module){
+    if(process.argv.length != 3){
+      console.error(`provide off/on e.g. yarn moveFR off or yarn moveFR on`);
+      process.exit(1);  
+    };   
+    main(Number(process.argv[2] == "off"));
+}

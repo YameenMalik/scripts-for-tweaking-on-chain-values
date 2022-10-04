@@ -8,7 +8,7 @@
     "setFR": "node ./setFundingRate.js",
     "liquidate": "node ./liquidateAccount.js",
     "removeOracleLimit": "node ./removeMaxAllowedLimit.js",
-    "moveFR": "node ./moveFROffChain.js",
+    "moveFR": "node ./moveFR.js",
     "setFee": "node ./setFees.js",
     "incPD": "node ./increaseOraclePriceDiff.js"
   },
