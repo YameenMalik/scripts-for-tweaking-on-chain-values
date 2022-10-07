@@ -12,13 +12,13 @@
     "setFee": "node ./setFees.js",
     "setTrading": "node ./setTradingStatus.js",
     "setBankWithdraw": "node ./setMarginBankWithdrawal.js",
-    "enableFS": "node ./enableFinalSettlement.js",
-    "performFinalSettlement": "node ./performFinalSettlement.js",
+    "delistPerpetual": "node ./delistPerpetual.js",
+    "closePosition": "node ./closePosition.js",
     "incPD": "node ./increaseOraclePriceDiff.js"
   },
   "dependencies": {
     "@firefly-exchange/firefly-client": "^1.0.52",
-    "@firefly-exchange/library": "^1.0.53",
+    "@firefly-exchange/library": "^1.0.58",
     "dotenv": "^16.0.2"
   },
   "repository": {

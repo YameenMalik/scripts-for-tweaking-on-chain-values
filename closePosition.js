@@ -17,18 +17,18 @@ const provider = new ethers.providers.JsonRpcProvider(providerURL);
 
 
 async function main(ownerPvtKey){  
-    console.log("Perform Final Settlement on:", ownerPvtKey);
+    console.log("Close Positions On:", ownerPvtKey);
     const owner = ownerPvtKey;
     const ownerWallet = new ethers.Wallet(owner, provider);
     contract = Perpetual__factory.connect(perpetualContractAddress, ownerWallet); 
     const address = await ownerWallet.getAddress();
-    await ( await contract.withdrawFinalSettlement(ownerWallet.address )).wait();
+    await ( await contract.closePosition(ownerWallet.address )).wait();
 }
 
 
 if(require.main === module){
     if(process.argv.length != 3){
-      console.error(`provide ownerPvtKey e.g. yarn performFinalSettlementStatus <ownerPvtKey>`);
+      console.error(`provide ownerPvtKey e.g. yarn closePosition <ownerPvtKey>`);
       process.exit(1);  
     };   
     main(process.argv[2]);
