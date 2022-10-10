@@ -14,7 +14,7 @@ Install packages using `yarn`
     - To update funding rate using off-chain operator run `yarn setFR <new funding race>`
     - To move funding rate to off-chain `yarn moveFR` // already done, no need to do it
 
-- Liquidation: `yarn liquidate <account to be liquidated pvt key> <liquidator pvt key> <leverage> <quantity>` e.g. `yarn liquidate key1 key2 4 10`
+- Liquidation: `yarn liquidate <account to be liquidated public address> <liquidator pvt key> <leverage> <quantity>` e.g. `yarn liquidate addrr pvtKey 4 10`
 
 - Tarding
     - To enable/disable trading using operator run `yarn setTrading <on/off> e.g. yarn setTrading on`
@@ -23,6 +23,6 @@ Install packages using `yarn`
     - To enable/disable margin bank withdrawal using operator run `yarn setBankWithdraw <on/off> e.g. yarn setBankWithdraw on`
     
 - Final Settlement
-    - To enable final settlement using priceOracleLowerBound and priceOracleUpperBound run `yarn enableFS <priceOracleLowerBound> <priceOracleUpperBound> e.g. yarn enableFS 400 600`
-    - To perform final settlement using owner's pvt key run `yarn performFinalSettlement <owner pvt Key> e.g. yarn performFinalSettlement pvtKey1`
+    - To delist perpetual using priceOracleLowerBound and priceOracleUpperBound run `yarn delistPerpetual <priceOracleLowerBound> <priceOracleUpperBound> e.g. yarn delistPerpetual 400 600`
+    - To close positon after delisting run `yarn closePosition <owner pvt Key> e.g. yarn closePosition pvtKey`
     
