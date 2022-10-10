@@ -12,7 +12,7 @@ console.log("Market:", market);
 
 
 const providerURL = env["URL"];
-const liquidationContractAddress = env[market]["Liquidation"]
+const liquidationContractAddress = env[market]["IsolatedLiquidation"]
 const perpetualContractAddress = env[market]["Perpetual"]
 
 const provider = new ethers.providers.JsonRpcProvider(providerURL);
