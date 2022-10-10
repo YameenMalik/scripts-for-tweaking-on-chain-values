@@ -14,11 +14,12 @@
     "setBankWithdraw": "node ./setMarginBankWithdrawal.js",
     "delistPerpetual": "node ./delistPerpetual.js",
     "closePosition": "node ./closePosition.js",
+    "setOracle":"node ./setMarketOracleStatus.js",
     "incPD": "node ./increaseOraclePriceDiff.js"
   },
   "dependencies": {
     "@firefly-exchange/firefly-client": "^1.0.52",
-    "@firefly-exchange/library": "^1.0.58",
+    "@firefly-exchange/library": "^1.0.59",
     "dotenv": "^16.0.2"
   },
   "repository": {

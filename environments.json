@@ -12,8 +12,8 @@
             "FundingOracle": "0xE859C19B1DbBe68f539f44A1309184ACE3D1f73f",
             "MarginMath": "0x21B844C760321813B3bf1F853381035f2dDeb901",
             "Perpetual": "0xaE0B1a34E7fd6d2cCD5571F5F677B894bD434145",
-            "Orders": "0x8C6eDe33D167D416b32eDd568C3578B0deF9bB8D",
-            "Liquidation": "0x0f993B8206E4301bC92BB2F6fE351Bca0471153F"
+            "IsolatedTrader": "0x8C6eDe33D167D416b32eDd568C3578B0deF9bB8D",
+            "IsolatedLiquidation": "0x0f993B8206E4301bC92BB2F6fE351Bca0471153F"
         },
         "ETH-PERP": {
             "USDC": "0x49a5e592b05535E0C1F2F982fcF241FbAB4e7b64",
@@ -24,8 +24,8 @@
             "FundingOracle": "0x8407538dBe5869ae091A90Ddb86a7647ceb8AfAF",
             "MarginMath": "0x8267C61279efee9eefaDD788E18525268B47A86C",
             "Perpetual": "0xcfD5fDC5BfCeFd26F7Ab1876913D7DA34b8cBE9f",
-            "Orders": "0xF232c48a40ECFd927787FF3bDbAD4BB7B801b683",
-            "Liquidation": "0xcBbB9c952aAe8A686B6D2D81A067d6019C83eE98"
+            "IsolatedTrader": "0xF232c48a40ECFd927787FF3bDbAD4BB7B801b683",
+            "IsolatedLiquidation": "0xcBbB9c952aAe8A686B6D2D81A067d6019C83eE98"
         }
     },
     "DEV":{
@@ -33,16 +33,16 @@
         "DEPLOYER": "590f42e7ecb5f98e2cd1c8b1d832804e5ec98e560dc51c47a53d5e366f9ff0cc",
         "ORACLE_OPERATOR": "0xd2b9b8b480d3e7bb6ac69eeac1c07e9349aa30c43e7cca167be90005a16b5718",
        "BTC-PERP": {
-        "USDC": "0x7CBc14fFEDc1643628225D2972b740a539318850",
-            "PriceOracle": "0x2c272629af11bb8aA09f77f7fa72Ad92dBBCB79E",
-            "MarginBank": "0xe452377126865DF18a547BD84936BcD521877327",
-            "Guardian": "0xD7fdE30Cf65d72bcc0F64c289e58317857D3F075",
-            "Evaluator": "0x4C021D6D057B9DA4087e6CA39649d8d270868985",
-            "FundingOracle": "0x81a9ccB2C94EE187f601cfD220A9e043c158535F",
-            "MarginMath": "0x36E95Cd79b8eBe5c0ad5F290d89eE054F8f90948",
-            "Perpetual": "0xcB4e5aCb3Bb96253AfE258Ef1e9dc76357B3659f",
-            "Orders": "0xccEbDB9EcDB8a818BF559EAfCdDc83ddaa2a066B",
-            "Liquidation": "0xc9D7705DA74D54a5791CCe9E1F2c53E29413e351"
+        "USDC": "0x315a543ace0B3958d53049a6019E89061454000f",
+        "Guardian": "0x97eA1b74C3D723f07Ebdc9DBE1DC6c2878E1c145",
+        "Evaluator": "0xB9AB60aC160f1d534d22999ac89E1F8633012a3E",
+        "Perpetual": "0xff43799177dE3C06dbafE8b8a7F667F640eaF030",
+        "MarginBank": "0x373c32B7dD20c3Fb2913967fB9742fd99459a58a",
+        "MarginMath": "0x635D20076D77b3A093b8C927E8e48979BdA34078",
+        "PriceOracle": "0xE6ba0339A7edCb09747C371985ED098eB2074B50",
+        "FundingOracle": "0xfdBFCF5B049ae231aA237334f0d96331452223ae",
+        "IsolatedTrader": "0x4c7422118835bf8Fe96d7986d99F727E7B2023C7",
+        "IsolatedLiquidation": "0x7835D4696b58Aa55f47e441916De8B4aEeC86160"
        },
        "ETH-PERP": {
         "USDC": "0x7CBc14fFEDc1643628225D2972b740a539318850",
@@ -53,8 +53,8 @@
         "FundingOracle": "0x65624FebfDF3e34fB780e38f241bb235f781336E",
         "MarginMath": "0x8ee760a0D7373aCcCFEdE2E8Db2636241452A834",
         "Perpetual": "0x0C457eed6Be90019BCa202757342c4Bb2835ae3c",
-        "Orders": "0x491e165bD378533B40f4B3b45C4c7E3D9e6F3115",
-        "Liquidation": "0xcBBa4B9211F5493B26dbbb2C127cE27799990407"
+        "IsolatedTrader": "0x491e165bD378533B40f4B3b45C4c7E3D9e6F3115",
+        "IsolatedLiquidation": "0xcBBa4B9211F5493B26dbbb2C127cE27799990407"
        },
        "tBTC-PERP": {
         "USDC": "0x7CBc14fFEDc1643628225D2972b740a539318850",
@@ -65,8 +65,8 @@
         "FundingOracle": "0x69baBEcFFAA837eEDC73cD78456f4540600e3723",
         "MarginMath": "0xb3Bd54989726Cc428b7EE41ACbE317aa1264b445",
         "Perpetual": "0xB3F5eD061F8A47D603471257014306726265D075",
-        "Orders": "0x86Ba9205a23A242c9966042b213D0B2cba990F6c",
-        "Liquidation": "0xbD3f7621b62063F5bf8D5aad147a4d9836Cb7A6c"
+        "IsolatedTrader": "0x86Ba9205a23A242c9966042b213D0B2cba990F6c",
+        "IsolatedLiquidation": "0xbD3f7621b62063F5bf8D5aad147a4d9836Cb7A6c"
        }
     }
 }
