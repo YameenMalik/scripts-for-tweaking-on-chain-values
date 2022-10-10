@@ -33,16 +33,16 @@
         "DEPLOYER": "590f42e7ecb5f98e2cd1c8b1d832804e5ec98e560dc51c47a53d5e366f9ff0cc",
         "ORACLE_OPERATOR": "0xd2b9b8b480d3e7bb6ac69eeac1c07e9349aa30c43e7cca167be90005a16b5718",
        "BTC-PERP": {
-        "USDC": "0x7CBc14fFEDc1643628225D2972b740a539318850",
-            "PriceOracle": "0x2c272629af11bb8aA09f77f7fa72Ad92dBBCB79E",
-            "MarginBank": "0xe452377126865DF18a547BD84936BcD521877327",
-            "Guardian": "0xD7fdE30Cf65d72bcc0F64c289e58317857D3F075",
-            "Evaluator": "0x4C021D6D057B9DA4087e6CA39649d8d270868985",
-            "FundingOracle": "0x81a9ccB2C94EE187f601cfD220A9e043c158535F",
-            "MarginMath": "0x36E95Cd79b8eBe5c0ad5F290d89eE054F8f90948",
-            "Perpetual": "0xcB4e5aCb3Bb96253AfE258Ef1e9dc76357B3659f",
-            "IsolatedTrader": "0xccEbDB9EcDB8a818BF559EAfCdDc83ddaa2a066B",
-            "IsolatedLiquidation": "0xc9D7705DA74D54a5791CCe9E1F2c53E29413e351"
+        "USDC": "0x315a543ace0B3958d53049a6019E89061454000f",
+        "Guardian": "0x97eA1b74C3D723f07Ebdc9DBE1DC6c2878E1c145",
+        "Evaluator": "0xB9AB60aC160f1d534d22999ac89E1F8633012a3E",
+        "Perpetual": "0xff43799177dE3C06dbafE8b8a7F667F640eaF030",
+        "MarginBank": "0x373c32B7dD20c3Fb2913967fB9742fd99459a58a",
+        "MarginMath": "0x635D20076D77b3A093b8C927E8e48979BdA34078",
+        "PriceOracle": "0xE6ba0339A7edCb09747C371985ED098eB2074B50",
+        "FundingOracle": "0xfdBFCF5B049ae231aA237334f0d96331452223ae",
+        "IsolatedTrader": "0x4c7422118835bf8Fe96d7986d99F727E7B2023C7",
+        "IsolatedLiquidation": "0x7835D4696b58Aa55f47e441916De8B4aEeC86160"
        },
        "ETH-PERP": {
         "USDC": "0x7CBc14fFEDc1643628225D2972b740a539318850",
