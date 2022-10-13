@@ -45,28 +45,19 @@
         "IsolatedLiquidation": "0x7835D4696b58Aa55f47e441916De8B4aEeC86160"
        },
        "ETH-PERP": {
-        "USDC": "0x7CBc14fFEDc1643628225D2972b740a539318850",
-        "PriceOracle": "0x2c272629af11bb8aA09f77f7fa72Ad92dBBCB79E",
-        "MarginBank": "0xe452377126865DF18a547BD84936BcD521877327",
-        "Guardian": "0xD7fdE30Cf65d72bcc0F64c289e58317857D3F075",
-        "Evaluator": "0x1AfDA7a2749eadFbf6C573De53BFc453Fa325b4A",
-        "FundingOracle": "0x65624FebfDF3e34fB780e38f241bb235f781336E",
-        "MarginMath": "0x8ee760a0D7373aCcCFEdE2E8Db2636241452A834",
-        "Perpetual": "0x0C457eed6Be90019BCa202757342c4Bb2835ae3c",
-        "IsolatedTrader": "0x491e165bD378533B40f4B3b45C4c7E3D9e6F3115",
-        "IsolatedLiquidation": "0xcBBa4B9211F5493B26dbbb2C127cE27799990407"
+        "USDC": "0x315a543ace0B3958d53049a6019E89061454000f",
+        "PriceOracle": "0xE6ba0339A7edCb09747C371985ED098eB2074B50",
+        "MarginBank": "0x373c32B7dD20c3Fb2913967fB9742fd99459a58a",
+        "Guardian": "0x97eA1b74C3D723f07Ebdc9DBE1DC6c2878E1c145",
+        "Evaluator": "0xcC00050DCdf40Cd7Eb37f16DCd53Cfc1663e0aB3",
+        "FundingOracle": "0xAFa313005D89eD21d0eeBA419FCc0F162c75Ce67",
+        "MarginMath": "0x00375bF9f95F6B5467902Bf54981a321FdFf36F0",
+        "Perpetual": "0xBedab63ECBc683b6F6dAa3DbcdcE026F5963812F",
+        "IsolatedTrader": "0xdcCAC62a52af803258cDC95c3C8F325Bc6DAd372",
+        "IsolatedLiquidation": "0x6b999EaA00D7fcf0E3C87d810A1f2b832797FbA6"
        },
        "tBTC-PERP": {
-        "USDC": "0x7CBc14fFEDc1643628225D2972b740a539318850",
-        "PriceOracle": "0x2c272629af11bb8aA09f77f7fa72Ad92dBBCB79E",
-        "MarginBank": "0xe452377126865DF18a547BD84936BcD521877327",
-        "Guardian": "0xD7fdE30Cf65d72bcc0F64c289e58317857D3F075",
-        "Evaluator": "0x95A409C9245B6c390402c59BaFB7468029e40654",
-        "FundingOracle": "0x69baBEcFFAA837eEDC73cD78456f4540600e3723",
-        "MarginMath": "0xb3Bd54989726Cc428b7EE41ACbE317aa1264b445",
-        "Perpetual": "0xB3F5eD061F8A47D603471257014306726265D075",
-        "IsolatedTrader": "0x86Ba9205a23A242c9966042b213D0B2cba990F6c",
-        "IsolatedLiquidation": "0xbD3f7621b62063F5bf8D5aad147a4d9836Cb7A6c"
+        
        }
     }
 }
