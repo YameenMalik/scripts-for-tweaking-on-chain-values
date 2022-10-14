@@ -4,28 +4,28 @@
         "DEPLOYER": "590f42e7ecb5f98e2cd1c8b1d832804e5ec98e560dc51c47a53d5e366f9ff0cc",
         "ORACLE_OPERATOR": "0x406ac5dfc6d5ff3300073e0c8ef98491e6f6aacf4d6f38139c15065576afc5d9",
         "BTC-PERP": {
-            "USDC": "0x49a5e592b05535E0C1F2F982fcF241FbAB4e7b64",
-            "PriceOracle": "0xC562151B7Be0aB0B63A8eD662909E28f3869Cab0",
-            "MarginBank": "0xfc8604B7475CEaC0013973b1AaBe85e76c2932fE",
-            "Guardian": "0x87cf84c9De6a852C47C7d4Fe6F0bDFFb0DEF0795",
-            "Evaluator": "0x6D6546E06bB8cc1d10e98B0b9a06623005Cb3492",
-            "FundingOracle": "0xE859C19B1DbBe68f539f44A1309184ACE3D1f73f",
-            "MarginMath": "0x21B844C760321813B3bf1F853381035f2dDeb901",
-            "Perpetual": "0xaE0B1a34E7fd6d2cCD5571F5F677B894bD434145",
-            "IsolatedTrader": "0x8C6eDe33D167D416b32eDd568C3578B0deF9bB8D",
-            "IsolatedLiquidation": "0x0f993B8206E4301bC92BB2F6fE351Bca0471153F"
+            "USDC": "0xFC84227Faf7C8Bf6b95f2735FeF3128D0074ceA2",
+            "PriceOracle": "0x9587CA7147FA5EfB8445291027a63527C9E80cA3",
+            "MarginBank": "0x807FB6493E368De762faAACe6b319db24a860E8c",
+            "Guardian": "0x7fEf88cc6AB830310b075B42E178d8A5a1c3428e",
+            "Evaluator": "0xD824561AdAaD64A38cD7bFDbAD678a7A12109ce3",
+            "FundingOracle": "0x3C1ec34342B14eFad3530B81b15527f7CcD321E8",
+            "MarginMath": "0x4e49Ed8Cf88d5458c590f74526ea686CBB706949",
+            "Perpetual": "0x9072a15b7593D59E8e255fEc72ed8aA0849DC531",
+            "IsolatedTrader": "0xCf325827c6e68234048A5747bE1516113FFF9E31",
+            "IsolatedLiquidation": "0x38235d780C4879a9EF371E5FbfbcEF7933dE82A7"
         },
         "ETH-PERP": {
-            "USDC": "0x49a5e592b05535E0C1F2F982fcF241FbAB4e7b64",
-            "PriceOracle": "0xC562151B7Be0aB0B63A8eD662909E28f3869Cab0",
-            "MarginBank": "0xfc8604B7475CEaC0013973b1AaBe85e76c2932fE",
-            "Guardian": "0x87cf84c9De6a852C47C7d4Fe6F0bDFFb0DEF0795",
-            "Evaluator": "0x900bfD6086EcC9F3f8DaE6E8051F2848E07A9c57",
-            "FundingOracle": "0x8407538dBe5869ae091A90Ddb86a7647ceb8AfAF",
-            "MarginMath": "0x8267C61279efee9eefaDD788E18525268B47A86C",
-            "Perpetual": "0xcfD5fDC5BfCeFd26F7Ab1876913D7DA34b8cBE9f",
-            "IsolatedTrader": "0xF232c48a40ECFd927787FF3bDbAD4BB7B801b683",
-            "IsolatedLiquidation": "0xcBbB9c952aAe8A686B6D2D81A067d6019C83eE98"
+            "USDC": "0xFC84227Faf7C8Bf6b95f2735FeF3128D0074ceA2",
+            "PriceOracle": "0x9587CA7147FA5EfB8445291027a63527C9E80cA3",
+            "MarginBank": "0x807FB6493E368De762faAACe6b319db24a860E8c",
+            "Guardian": "0x7fEf88cc6AB830310b075B42E178d8A5a1c3428e",
+            "Evaluator": "0xf2Ab894A8B8F10DA759fE5CaCd757aB89b21e3Cf",
+            "FundingOracle": "0x99a1004873548AEA81324fee8A9e0247a7CBA28F",
+            "MarginMath": "0xa93e9625aEF488302946e4Cb3d1f972C65d00549",
+            "Perpetual": "0x6e337B1D05138be1bc6D163B8E4b88A5e1A361e9",
+            "IsolatedTrader": "0x61Ec067580808a24fB26025e8deA79131A0Ab480",
+            "IsolatedLiquidation": "0xA43E1f03555ac9b88b0eebc084E5223e9fD96f5E"
         }
     },
     "DEV":{
