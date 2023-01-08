@@ -1,4 +1,4 @@
-const { Perpetual__factory } = require("@firefly-exchange/library/dist/src/contracts/exchange");
+const { Perpetual__factory } = require("@firefly-exchange/library/dist/src/contracts/exchange_arbitrum");
 const { ethers, toBigNumberStr, Trader } = require("@firefly-exchange/library");
 const environment = require("./environments.json");
 
@@ -41,7 +41,8 @@ async function main(liquidatorAddress, liquidatorPvtKey, leverage, quantity, pos
             .connect(liquidatorWallet)
             .trade(
                 params.accounts, 
-                [params.data]
+                [params.data],
+                toBigNumberStr(0),
                 )
             ).wait()
 }
