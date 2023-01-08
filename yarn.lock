@@ -412,10 +412,26 @@
     ts-mocha "^10.0.0"
     web3 "^1.7.5"
 
-"@firefly-exchange/library@^1.0.53", "@firefly-exchange/library@^1.0.56":
+"@firefly-exchange/library@^1.0.56":
   version "1.0.56"
   resolved "https://registry.yarnpkg.com/@firefly-exchange/library/-/library-1.0.56.tgz#37183ebc504e8b3854a40ac9d3339d974dd19b07"
   integrity sha512-Ogjbir2yRkaz7ntpNkZ0CWspVK20qG15G//MMqUZiNNA1xs97hkD6uWX+Msi+TedtL/wYSfEDQ1bDlTJIgVnbw==
+  dependencies:
+    bignumber "^1.1.0"
+    bignumber.js "^9.0.2"
+    chai "^4.3.6"
+    chai-as-promised "^7.1.1"
+    ethers "^5.6.8"
+    lodash "^4.17.21"
+    mocha "^10.0.0"
+    socket.io-client "^4.5.1"
+    ts-mocha "^10.0.0"
+    web3 "^1.7.5"
+
+"@firefly-exchange/library@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@firefly-exchange/library/-/library-1.1.5.tgz#0f150c616cf6bcf93382352ff93041e10704176e"
+  integrity sha512-EH7YRv4+P76bGjWYPil/zqY0xX7TkMf7ghQxAnTc2oNcKYOMgXm9XQGDY/GB0NyvIAeUsKTt5dAfwsLGnP6n4g==
   dependencies:
     bignumber "^1.1.0"
     bignumber.js "^9.0.2"
