@@ -38,13 +38,17 @@ async function main(liquidatorAddress, liquidatorPvtKey, leverage, quantity, pos
         liquidationContractAddress
     );
 
+    const gasLimit = +await contract.connect(liquidatorWallet).estimateGas.trade(params.accounts, 
+        [params.data],
+        toBigNumberStr(0))
+
     await  ( await contract
             .connect(liquidatorWallet)
             .trade(
                 params.accounts, 
                 [params.data],
                 toBigNumberStr(0),
-                {gasLimit: 5_000_000, gasPrice: +await provider.getGasPrice()}
+                {gasLimit: gasLimit, gasPrice: +await provider.getGasPrice()}
                 )
             ).wait()
 }
