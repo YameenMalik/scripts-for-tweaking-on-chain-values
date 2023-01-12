@@ -20,6 +20,7 @@ const provider = new ethers.providers.JsonRpcProvider(providerURL);
 async function main(liquidatorAddress, liquidatorPvtKey, leverage, quantity, positionSide){
 
     const liquidatorWallet = new ethers.Wallet(liquidatorPvtKey, provider);
+    console.log("Liquidator: ", liquidatorWallet.address);
     const contract = Perpetual__factory.connect(perpetualContractAddress, liquidatorWallet);
 
     const params = await Trader.setupLiquidationTrade(
@@ -43,10 +44,10 @@ async function main(liquidatorAddress, liquidatorPvtKey, leverage, quantity, pos
                 params.accounts, 
                 [params.data],
                 toBigNumberStr(0),
+                {gasLimit: 5_000_000, gasPrice: +await provider.getGasPrice()}
                 )
             ).wait()
 }
-
 
 if(require.main === module){
     if(process.argv.length != 7){
