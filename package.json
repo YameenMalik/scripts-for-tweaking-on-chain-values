@@ -16,7 +16,9 @@
     "delistPerpetual": "node ./delistPerpetual.js",
     "closePosition": "node ./closePosition.js",
     "setOracle": "node ./setMarketOracleStatus.js",
-    "incPD": "node ./increaseOraclePriceDiff.js"
+    "incPD": "node ./increaseOraclePriceDiff.js",
+    "bankBal": "node ./bankBalance.js"
+
   },
   "dependencies": {
     "@firefly-exchange/firefly-client": "^1.0.52",
