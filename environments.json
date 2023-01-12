@@ -1,6 +1,6 @@
 {
     "TESTNET": {
-      "URL": "https://arbitrum-goerli.infura.io/v3/62bcda18381b45eab5435e1342da21a6",
+      "URL": "https://goerli-rollup.arbitrum.io/rpc",
       "DEPLOYER": "4ef06568055d528efdeb3a2e0c1a4b1a0f1fdf4f9e388f11f0a248228298c2b7",
       "ORACLE_OPERATOR": "4ef06568055d528efdeb3a2e0c1a4b1a0f1fdf4f9e388f11f0a248228298c2b7",
       "BTC-PERP": {
