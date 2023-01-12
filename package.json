@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "setDummyPrice": "node ./setDummyOraclePrice.js",
     "setPrice": "node ./setOraclePrice.js",
     "setFR": "node ./setFundingRate.js",
     "liquidate": "node ./liquidateAccount.js",
